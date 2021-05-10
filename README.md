@@ -25,6 +25,8 @@ Untuk menginstal repository ini di lokal anda, jalankan perintah di bawah ini me
 composer create-project ianriizky/code-interview
 ```
 
+Packagist: https://packagist.org/packages/ianriizky/coding-interview
+
 ## *Testing*
 
 Jalankan perintah di bawah ini untuk menjalankan *test script* melalui [phpunit](https://phpunit.de/).
@@ -35,8 +37,8 @@ Jalankan perintah di bawah ini untuk menjalankan *test script* melalui [phpunit]
 
 ## Daftar Studi Kasus yang Tersedia
 
-- [x] Fizz Buzz ➡ Programmer Zaman Now (https://www.youtube.com/watch?v=FKHV-i7UUvI)
-- [x] Palindrome ➡ Programmer Zaman Now (https://www.youtube.com/watch?v=DXQuiPKl79Y)
+- [x] [Fizz Buzz](src/FizzBuzz/README.md)
+- [x] [Palindrome](src/Palindrome/README.md)
 
 Anda bisa membantu kami untuk menambah daftar studi kasus di atas dengan ikut berkontribusi pada *repository* ini. Lihat [`contributing.md`](CONTRIBUTING.md) untuk informasi selanjutnya.
 
