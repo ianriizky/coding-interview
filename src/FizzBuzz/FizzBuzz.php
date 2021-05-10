@@ -39,7 +39,7 @@ class FizzBuzz
     /**
      * Generate list of fizz buzz data.
      *
-     * @return array
+     * @return int[]|string[]
      */
     public function generate(): array
     {
