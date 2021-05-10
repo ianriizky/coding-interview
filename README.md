@@ -8,7 +8,14 @@
 [![Total Downloads](https://poser.pugx.org/ianriizky/coding-interview/d/total.svg)](https://packagist.org/packages/ianriizky/coding-interview)
 [![Software License](https://poser.pugx.org/ianriizky/coding-interview/license.svg)](https://packagist.org/packages/ianriizky/coding-interview)
 
-Projek ini berisi kumpulan *source code* dari pertanyaan atau tantangan yang sering diberikan oleh pewawancara kepada calon karyawan saat mengikuti proses *coding interview* di perusahaan.
+Projek ini berisi kumpulan *source code* dari pertanyaan atau studi kasus yang sering diberikan oleh pewawancara kepada calon karyawan saat mengikuti proses *coding interview* di perusahaan.
+
+Source code ini dibuat menggunakan bahasa pemrograman PHP dan sudah dilengkapi dengan *unit test* menggunakan [phpunit](https://phpunit.de).
+
+## Prasyarat
+
+- PHP >= 8.0.0
+- Composer >= 2.0.0
 
 ## Instalasi
 
@@ -26,15 +33,16 @@ Jalankan perintah di bawah ini untuk menjalankan *test script* melalui [phpunit]
 ./vendor/bin/phpunit
 ```
 
+## Daftar Studi Kasus yang Tersedia
+
+- [ ] Fizz Buzz ➡ Programmer Zaman Now (https://www.youtube.com/watch?v=FKHV-i7UUvI)
+- [x] Palindrome ➡ Programmer Zaman Now (https://www.youtube.com/watch?v=DXQuiPKl79Y)
+
+Anda bisa membantu kami untuk menambah daftar studi kasus di atas dengan ikut berkontribusi pada *repository* ini. Lihat [`contributing.md`](CONTRIBUTING.md) untuk informasi selanjutnya.
+
 ## *Changelog*
 
 Lihat [`changelog.md`](CHANGELOG.md) untuk informasi lebih lanjut mengenai perubahan yang terjadi pada *repository* ini.
-
-## Kontribusi
-
-Kami akan sangat berterima kasih jika anda mau memberi kontribusi pada *repository* ini.
-
-Lihat [`contributing.md`](CONTRIBUTING.md) untuk informasi selanjutnya.
 
 ## Licensi
 
