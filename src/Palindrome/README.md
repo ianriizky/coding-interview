@@ -73,6 +73,8 @@ return true;
 ```
 
 ---
+### Catatan Kaki:
+
 <strong id="fn1">1</strong> [Palindrom, Wikipedia bahasa Indonesia, ensiklopedia bebas](https://id.wikipedia.org/wiki/Palindrom). [↩](#pg1)
 <br>
 <strong id="fn2">2</strong> [Programmer Zaman Now - Coding Interview Palindrome (Solusi Palindrome)](https://www.youtube.com/watch?v=DXQuiPKl79Y&t=250s). [↩](#pg2)

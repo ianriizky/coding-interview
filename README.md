@@ -35,7 +35,7 @@ Jalankan perintah di bawah ini untuk menjalankan *test script* melalui [phpunit]
 
 ## Daftar Studi Kasus yang Tersedia
 
-- [ ] Fizz Buzz ➡ Programmer Zaman Now (https://www.youtube.com/watch?v=FKHV-i7UUvI)
+- [x] Fizz Buzz ➡ Programmer Zaman Now (https://www.youtube.com/watch?v=FKHV-i7UUvI)
 - [x] Palindrome ➡ Programmer Zaman Now (https://www.youtube.com/watch?v=DXQuiPKl79Y)
 
 Anda bisa membantu kami untuk menambah daftar studi kasus di atas dengan ikut berkontribusi pada *repository* ini. Lihat [`contributing.md`](CONTRIBUTING.md) untuk informasi selanjutnya.
