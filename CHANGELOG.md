@@ -4,6 +4,11 @@ Semua pembaruan pada `coding-interview` akan didokumentasikan pada dokumen ini.
 
 ## [Unreleased](https://github.com/ianriizky/coding-interview/compare/master...develop)
 
+## [v1.1.3 (2021-05-10)](https://github.com/ianriizky/coding-interview/compare/v1.1.2...v1.1.3)
+
+### Perbaikan
+- Mengubah nama packagist menggunakan "ianriizky".
+
 ## [v1.1.2 (2021-05-10)](https://github.com/ianriizky/coding-interview/compare/v1.1.1...v1.1.2)
 
 ### Baru
