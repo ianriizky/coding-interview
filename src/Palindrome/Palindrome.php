@@ -1,43 +1,9 @@
 <?php
 
-namespace Ianriizky\CodingInterview;
-
-use DomainException;
+namespace Ianriizky\CodingInterview\Palindrome;
 
 class Palindrome
 {
-    /**
-     * Palindrome method name for "reverse".
-     *
-     * @var string
-     */
-    public const METHOD_REVERSE = 'reverse';
-
-    /**
-     * Palindrome method name for "loop".
-     *
-     * @var string
-     */
-    public const METHOD_LOOP = 'loop';
-
-    /**
-     * Palindrome method name for "recursive".
-     *
-     * @var string
-     */
-    public const METHOD_RECURSIVE = 'recursive';
-
-    /**
-     * List of available palindrome method name.
-     *
-     * @var array
-     */
-    public const METHODS = [
-        self::METHOD_REVERSE => 'checkUsingReverse',
-        self::METHOD_LOOP => 'checkUsingLoop',
-        self::METHOD_RECURSIVE => 'checkUsingRecursive',
-    ];
-
     /**
      * Create a new instance class.
      *
@@ -59,27 +25,6 @@ class Palindrome
     public static function make(string $value)
     {
         return new static($value);
-    }
-
-    /**
-     * Determine whether the given value is a palindrome or not.
-     *
-     * @param  string  $method
-     * @return bool
-     *
-     * @throws \DomainException
-     */
-    public function check(string $method): bool
-    {
-        if (!in_array($method, static::METHODS, true)) {
-            throw new DomainException(sprintf(
-                'The given method name %s is not available.', $method
-            ));
-        }
-
-        $selectedMethod = static::METHODS[$method];
-
-        return $this->$selectedMethod();
     }
 
     /**

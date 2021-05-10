@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use Ianriizky\CodingInterview\Palindrome;
+use Ianriizky\CodingInterview\Palindrome\Palindrome;
 use Tests\TestCase;
 
 class PalindromeTest extends TestCase
@@ -75,27 +75,31 @@ class PalindromeTest extends TestCase
     public function test_assert_is_palindrome_with_reverse()
     {
         foreach ($this->palindromeWords as $word) {
-            $this->assertTrue(Palindrome::make($word)->checkUsingReverse(), sprintf(
-                'word: %s', $word
-            ));
+            $this->assertTrue(
+                Palindrome::make($word)->checkUsingReverse(),
+                $this->generateErrorMessageForWord($word)
+            );
         }
 
         foreach ($this->unpalindromeWords as $word) {
-            $this->assertFalse(Palindrome::make($word)->checkUsingReverse(), sprintf(
-                'word: %s', $word
-            ));
+            $this->assertFalse(
+                Palindrome::make($word)->checkUsingReverse(),
+                $this->generateErrorMessageForWord($word)
+            );
         }
 
         foreach ($this->palindromeSentences as $sentence) {
-            $this->assertTrue(Palindrome::make($sentence)->checkUsingReverse(), sprintf(
-                'sentence: %s', $sentence
-            ));
+            $this->assertTrue(
+                Palindrome::make($sentence)->checkUsingReverse(),
+                $this->generateErrorMessageForSentence($sentence)
+            );
         }
 
         foreach ($this->unpalindromeSentences as $sentence) {
-            $this->assertFalse(Palindrome::make($sentence)->checkUsingReverse(), sprintf(
-                'sentence: %s', $sentence
-            ));
+            $this->assertFalse(
+                Palindrome::make($sentence)->checkUsingReverse(),
+                $this->generateErrorMessageForSentence($sentence)
+            );
         }
     }
 
@@ -107,27 +111,31 @@ class PalindromeTest extends TestCase
     public function test_assert_is_palindrome_with_loop()
     {
         foreach ($this->palindromeWords as $word) {
-            $this->assertTrue(Palindrome::make($word)->checkUsingLoop(), sprintf(
-                'word: %s', $word
-            ));
+            $this->assertTrue(
+                Palindrome::make($word)->checkUsingLoop(),
+                $this->generateErrorMessageForWord($word)
+            );
         }
 
         foreach ($this->unpalindromeWords as $word) {
-            $this->assertFalse(Palindrome::make($word)->checkUsingLoop(), sprintf(
-                'word: %s', $word
-            ));
+            $this->assertFalse(
+                Palindrome::make($word)->checkUsingLoop(),
+                $this->generateErrorMessageForWord($word)
+            );
         }
 
         foreach ($this->palindromeSentences as $sentence) {
-            $this->assertTrue(Palindrome::make($sentence)->checkUsingLoop(), sprintf(
-                'sentence: %s', $sentence
-            ));
+            $this->assertTrue(
+                Palindrome::make($sentence)->checkUsingLoop(),
+                $this->generateErrorMessageForSentence($sentence)
+            );
         }
 
         foreach ($this->unpalindromeSentences as $sentence) {
-            $this->assertFalse(Palindrome::make($sentence)->checkUsingLoop(), sprintf(
-                'sentence: %s', $sentence
-            ));
+            $this->assertFalse(
+                Palindrome::make($sentence)->checkUsingLoop(),
+                $this->generateErrorMessageForSentence($sentence)
+            );
         }
     }
 
@@ -139,27 +147,53 @@ class PalindromeTest extends TestCase
     public function test_assert_is_palindrome_with_recursive()
     {
         foreach ($this->palindromeWords as $word) {
-            $this->assertTrue(Palindrome::make($word)->checkUsingRecursive(), sprintf(
-                'word: %s', $word
-            ));
+            $this->assertTrue(
+                Palindrome::make($word)->checkUsingRecursive(),
+                $this->generateErrorMessageForWord($word)
+            );
         }
 
         foreach ($this->unpalindromeWords as $word) {
-            $this->assertFalse(Palindrome::make($word)->checkUsingRecursive(), sprintf(
-                'word: %s', $word
-            ));
+            $this->assertFalse(
+                Palindrome::make($word)->checkUsingRecursive(),
+                $this->generateErrorMessageForWord($word)
+            );
         }
 
         foreach ($this->palindromeSentences as $sentence) {
-            $this->assertTrue(Palindrome::make($sentence)->checkUsingRecursive(), sprintf(
-                'sentence: %s', $sentence
-            ));
+            $this->assertTrue(
+                Palindrome::make($sentence)->checkUsingRecursive(),
+                $this->generateErrorMessageForSentence($sentence)
+            );
         }
 
         foreach ($this->unpalindromeSentences as $sentence) {
-            $this->assertFalse(Palindrome::make($sentence)->checkUsingRecursive(), sprintf(
-                'sentence: %s', $sentence
-            ));
+            $this->assertFalse(
+                Palindrome::make($sentence)->checkUsingRecursive(),
+                $this->generateErrorMessageForSentence($sentence)
+            );
         }
+    }
+
+    /**
+     * Generate an error message for palindrome word.
+     *
+     * @param  string  $word
+     * @return string
+     */
+    protected function generateErrorMessageForWord(string $word): string
+    {
+        return sprintf('word: %s', $word);
+    }
+
+    /**
+     * Generate an error message for palindrome sentence.
+     *
+     * @param  string  $sentence
+     * @return string
+     */
+    protected function generateErrorMessageForSentence(string $sentence): string
+    {
+        return sprintf('sentence: %s', $sentence);
     }
 }
