@@ -22,7 +22,7 @@ Source code ini dibuat menggunakan bahasa pemrograman PHP dan sudah dilengkapi d
 Untuk menginstal repository ini di lokal anda, jalankan perintah di bawah ini melalui terminal.
 
 ```bash
-composer create-project ianriizky/code-interview
+composer create-project ianriizky/coding-interview
 ```
 
 Packagist: https://packagist.org/packages/ianriizky/coding-interview
