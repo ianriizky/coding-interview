@@ -1,4 +1,3 @@
-
 # Kumpulan Coding Interview
 
 [![Build Status](https://travis-ci.com/ianriizky/coding-interview.svg)](https://travis-ci.org/ianriizky/coding-interview)
@@ -14,8 +13,8 @@ Source code ini dibuat menggunakan bahasa pemrograman PHP dan sudah dilengkapi d
 
 ## Prasyarat
 
-- PHP >= 8.0.0
-- Composer >= 2.0.0
+- PHP ^8.0
+- Composer ^2.0
 
 ## Instalasi
 
@@ -27,7 +26,7 @@ composer create-project ianriizky/coding-interview
 
 Packagist: https://packagist.org/packages/ianriizky/coding-interview
 
-## *Testing*
+## Testing
 
 Jalankan perintah di bawah ini untuk menjalankan *test script* melalui [phpunit](https://phpunit.de/).
 
@@ -50,6 +49,6 @@ Lihat [`changelog.md`](CHANGELOG.md) untuk informasi lebih lanjut mengenai perub
 
 *Repository* ini menggunakan lisensi MIT License (MIT). Lihat [`license.md`](LICENSE.md) untuk informasi selanjutnya.
 
-## Pencipta
+## Kreator
 
 - [@ianriizky](https://github.com/ianriizky)
