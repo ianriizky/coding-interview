@@ -32,6 +32,8 @@ Jalankan perintah di bawah ini untuk menjalankan *test script* melalui [phpunit]
 
 ```bash
 ./vendor/bin/phpunit
+## atau
+composer test
 ```
 
 ## Daftar Studi Kasus yang Tersedia
