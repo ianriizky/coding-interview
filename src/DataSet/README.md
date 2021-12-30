@@ -9,5 +9,5 @@ Contoh *source code* dari studi kasus Dataset menggunakan bahasa pemrograman PHP
 
 <strong id="fn1">1</strong> [Pengertian Dataset dan Jenis-jenisnya, Kumparan](https://kumparan.com/kabar-harian/pengertian-dataset-dan-jenis-jenisnya-1wtM6xNlkpQ/2). [↩](#pg1)
 <br>
-<strong id="fn2">2</strong> [Programmer Zaman Now - Coding Interview Struktur Data Set](https://www.youtube.com/watch?v=OWm1vSHrC_A). [↩](#pg2)
+<strong id="fn2">2</strong> [Programmer Zaman Now - Coding Interview Struktur Data Set (UNLISTED)](https://www.youtube.com/watch?v=OWm1vSHrC_A). [↩](#pg2)
 <br>

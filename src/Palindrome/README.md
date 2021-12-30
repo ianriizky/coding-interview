@@ -54,22 +54,27 @@ Ada optimasi yang dilakukan pada *source code* di atas, di mana batas perulangan
 ## Metode *recursive*<sup id="pg5">[5](#fn5)</sup>
 Metode ini prinsipnya hampir sama dengan metode *loop* yang telah dijelaskan sebelumnya. Perbedaan dari metode *recursive* ini hanya terletak pada dihilangkannya perulangan ``for()`` dan pengecekan batas perulangan diganti menjadi ``if ($index < floor(strlen($value) / 2))`` sehingga menghasilkan pemanggilan fungsi yang sama secara *recursive* sebagaimana dapat dilihat pada *source code* di bawah ini.
 ```php
-$value = 'katak';
+$this->value = 'katak';
 
-if ($index < floor(strlen($value) / 2)) {
-    $lastCharacterIndex = strlen($value) - ($index + 1);
+public function checkUsingRecursive(int $index = 0): bool
+{
+    $value = $this->value;
 
-    $firstCharacter = $value[$index];
-    $lastCharacter = $value[$lastCharacterIndex];
+    if ($index < floor(strlen($value) / 2)) {
+        $lastCharacterIndex = strlen($value) - ($index + 1);
 
-    if ($firstCharacter !== $lastCharacter) {
-        return false;
+        $firstCharacter = $value[$index];
+        $lastCharacter = $value[$lastCharacterIndex];
+
+        if ($firstCharacter !== $lastCharacter) {
+            return false;
+        }
+
+        return $this->checkUsingRecursive($index + 1);
     }
 
-    return $this->checkUsingRecursive($index + 1); // kunci recursive ada di sini
+    return true;
 }
-
-return true;
 ```
 
 ---
