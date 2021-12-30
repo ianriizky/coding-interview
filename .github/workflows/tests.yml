@@ -1,0 +1,42 @@
+on: push
+
+name: tests
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup PHP with Xdebug
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          coverage: xdebug
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 5
+          max_attempts: 5
+          command: composer install --no-scripts
+
+      - name: Execute tests
+        run: |
+          mkdir -p build/logs
+          vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+      - name: Upload Scrutinizer coverage
+        uses: sudo-bot/action-scrutinizer@latest
+        with:
+          cli-args: "--format=php-clover build/logs/clover.xml"
+
+      - name: Upload coverage results to Coveralls
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          composer global require php-coveralls/php-coveralls
+          php-coveralls --coverage_clover=build/logs/clover.xml -v
+
