@@ -1,5 +1,6 @@
 # Kumpulan Coding Interview
 
+[![Build Status](https://github.com/ianriizky/coding-interview/workflows/tests/badge.svg)](https://github.com/ianriizky/coding-interview/actions)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ianriizky/coding-interview.svg?style=flat)](https://scrutinizer-ci.com/g/ianriizky/coding-interview)
 [![Coverage Status](https://coveralls.io/repos/github/ianriizky/coding-interview/badge.svg)](https://coveralls.io/github/ianriizky/coding-interview)
 [![Latest Stable Version](https://poser.pugx.org/ianriizky/coding-interview/v/stable.svg)](https://packagist.org/packages/ianriizky/coding-interview)
