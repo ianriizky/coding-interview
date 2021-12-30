@@ -4,6 +4,16 @@ Semua pembaruan pada `coding-interview` akan didokumentasikan pada dokumen ini.
 
 ## [Unreleased](https://github.com/ianriizky/coding-interview/compare/master...develop)
 
+## [v1.3.0 (2021-12-30)](https://github.com/ianriizky/coding-interview/compare/v1.2.0...v1.3.0)
+
+### Baru
+- Studi kasus faktorial ([#1194c5c](https://github.com/ianriizky/coding-interview/commit/1194c5c041dd929af02aec2a0bd809229d893bc8)).
+
+### Perubahan
+- Menambah keterangan UNLISTED di video youtube Programmer Zaman Now dataset ([#9dfd4d0](https://github.com/ianriizky/coding-interview/commit/9dfd4d03bb7b2f8540ac6931c38877ec8ab79bae)).
+- Perbarui readme di palindrome ([#9dfd4d0](https://github.com/ianriizky/coding-interview/commit/9dfd4d03bb7b2f8540ac6931c38877ec8ab79bae)).
+
+
 ## [v1.2.0 (2021-12-30)](https://github.com/ianriizky/coding-interview/compare/v1.1.4...v1.2.0)
 
 ### Baru
