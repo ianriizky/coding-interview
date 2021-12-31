@@ -4,6 +4,12 @@ Semua pembaruan pada `coding-interview` akan didokumentasikan pada dokumen ini.
 
 ## [Unreleased](https://github.com/ianriizky/coding-interview/compare/master...develop)
 
+## [v1.3.1 (2021-12-31)](https://github.com/ianriizky/coding-interview/compare/v1.3.0...v1.3.1)
+
+### Perubahan
+- Menambah data set and factorial coding interview ke dalam readme utama ([#774c672](https://github.com/ianriizky/coding-interview/commit/774c672547a5b98ee901dbdf77a12985c01cb6db)).
+
+
 ## [v1.3.0 (2021-12-30)](https://github.com/ianriizky/coding-interview/compare/v1.2.0...v1.3.0)
 
 ### Baru

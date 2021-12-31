@@ -40,6 +40,8 @@ composer test
 
 - [x] [Fizz Buzz](src/FizzBuzz/README.md)
 - [x] [Palindrome](src/Palindrome/README.md)
+- [x] [Data Set](src/DataSet/README.md)
+- [x] [Factorial](src/Factorial/README.md)
 
 Anda bisa membantu kami untuk menambah daftar studi kasus di atas dengan ikut berkontribusi pada *repository* ini. Lihat [`contributing.md`](CONTRIBUTING.md) untuk informasi selanjutnya.
 
