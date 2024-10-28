@@ -7,7 +7,6 @@ class Palindrome
     /**
      * Create a new instance class.
      *
-     * @param  string  $value
      * @return void
      */
     public function __construct(
@@ -19,7 +18,6 @@ class Palindrome
     /**
      * Create a new instance class in a static way.
      *
-     * @param  string  $value
      * @return static
      */
     public static function make(string $value)
@@ -29,8 +27,6 @@ class Palindrome
 
     /**
      * Determine whether the given value is a palindrome or not using reverse way.
-     *
-     * @return bool
      */
     public function checkUsingReverse(): bool
     {
@@ -47,8 +43,6 @@ class Palindrome
 
     /**
      * Determine whether the given value is a palindrome or not using loop way.
-     *
-     * @return bool
      */
     public function checkUsingLoop(): bool
     {
@@ -70,9 +64,6 @@ class Palindrome
 
     /**
      * Determine whether the given value is a palindrome or not using recursive way.
-     *
-     * @param  int  $index
-     * @return bool
      */
     public function checkUsingRecursive(int $index = 0): bool
     {
@@ -96,8 +87,6 @@ class Palindrome
 
     /**
      * Sanitize the given value by running some specific task.
-     *
-     * @return string
      */
     protected function sanitize(string $value): string
     {

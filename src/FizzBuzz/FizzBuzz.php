@@ -7,10 +7,6 @@ class FizzBuzz
     /**
      * Create a new instance class.
      *
-     * @param  int  $start
-     * @param  int  $end
-     * @param  int  $fizz
-     * @param  int  $buzz
      * @return void
      */
     public function __construct(
@@ -25,10 +21,6 @@ class FizzBuzz
     /**
      * Create a new instance class in a static way.
      *
-     * @param  int  $start
-     * @param  int  $end
-     * @param  int  $fizz
-     * @param  int  $buzz
      * @return static
      */
     public static function make(int $start, int $end, int $fizz = 3, int $buzz = 5)

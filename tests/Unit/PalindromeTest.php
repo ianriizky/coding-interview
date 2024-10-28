@@ -9,20 +9,16 @@ class PalindromeTest extends TestCase
 {
     /**
      * List of palindrome word.
-     *
-     * @var array
      */
     protected array $palindromeWords = [
         'ada', 'apa', 'ara',
         'asa', 'bab', 'ini',
         'katak', 'kodok', 'makam',
-        'malam', 'radar', 'taat', 'tamat'
+        'malam', 'radar', 'taat', 'tamat',
     ];
 
     /**
      * List of un-palindrome word.
-     *
-     * @var array
      */
     protected array $unpalindromeWords = [
         'kata', 'kabar', 'perkataan',
@@ -33,8 +29,6 @@ class PalindromeTest extends TestCase
 
     /**
      * List of palindrome sentence.
-     *
-     * @var array
      */
     protected array $palindromeSentences = [
         'Aku suka rajawali, bapak. Apabila wajar, aku suka.',
@@ -51,8 +45,6 @@ class PalindromeTest extends TestCase
 
     /**
      * List of un-palindrome sentence.
-     *
-     * @var array
      */
     protected array $unpalindromeSentences = [
         '76 tahun Indonesia merdeka.',
@@ -177,9 +169,6 @@ class PalindromeTest extends TestCase
 
     /**
      * Generate an error message for palindrome word.
-     *
-     * @param  string  $word
-     * @return string
      */
     protected function generateErrorMessageForWord(string $word): string
     {
@@ -188,9 +177,6 @@ class PalindromeTest extends TestCase
 
     /**
      * Generate an error message for palindrome sentence.
-     *
-     * @param  string  $sentence
-     * @return string
      */
     protected function generateErrorMessageForSentence(string $sentence): string
     {

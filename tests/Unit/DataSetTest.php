@@ -103,7 +103,7 @@ class DataSetTest extends TestCase
         $dataset = new DataSet;
 
         for ($index = 0; $index < $size; $index++) {
-            $dataset->add('item-' . $index);
+            $dataset->add('item-'.$index);
         }
 
         $this->assertEquals($size, $dataset->size());
