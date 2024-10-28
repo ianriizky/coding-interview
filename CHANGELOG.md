@@ -2,7 +2,11 @@
 
 Semua pembaruan pada `coding-interview` akan didokumentasikan pada dokumen ini.
 
-## [Unreleased](https://github.com/ianriizky/coding-interview/compare/v1.4.0...develop)
+## [Unreleased](https://github.com/ianriizky/coding-interview/compare/v1.4.1...develop)
+
+## [v1.4.1 (2024-10-28)](https://github.com/ianriizky/coding-interview/compare/v1.4.0...v1.4.1)
+
+-   fix: failed to upload Scrutinizer coverage on github actions ([#898f835](https://github.com/ianriizky/coding-interview/commit/898f835199c1042e88c7f3eac9ba32ade58f70b3)).
 
 ## [v1.4.0 (2024-10-28)](https://github.com/ianriizky/coding-interview/compare/v1.3.1...v1.4.0)
 

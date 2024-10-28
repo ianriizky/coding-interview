@@ -10,11 +10,15 @@ jobs:
       - name: Setup PHP with Xdebug
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0'
+          php-version: "8.0"
           coverage: xdebug
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          # Fetch 10 commits or Scrutinizer will throw ("Failed to retrieve commit parents. If you use a shallow git checkout, please checkout at least a depth of one."), see: RepositoryIntrospector at scrutinizer-ci/ocular GitHub repository
+          # 10 commits is an arbitrary value that is more than 1 commit
+          fetch-depth: 10
 
       - name: Install dependencies
         uses: nick-invision/retry@v2
@@ -39,4 +43,3 @@ jobs:
         run: |
           composer global require php-coveralls/php-coveralls
           php-coveralls --coverage_clover=build/logs/clover.xml -v
-
