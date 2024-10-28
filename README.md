@@ -7,14 +7,14 @@
 [![Total Downloads](https://poser.pugx.org/ianriizky/coding-interview/d/total.svg)](https://packagist.org/packages/ianriizky/coding-interview)
 [![Software License](https://poser.pugx.org/ianriizky/coding-interview/license.svg)](https://packagist.org/packages/ianriizky/coding-interview)
 
-Projek ini berisi kumpulan *source code* dari pertanyaan atau studi kasus yang sering diberikan oleh pewawancara kepada calon karyawan saat mengikuti proses *coding interview* di perusahaan.
+Projek ini berisi kumpulan _source code_ dari pertanyaan atau studi kasus yang sering diberikan oleh pewawancara kepada calon karyawan saat mengikuti proses _coding interview_ di perusahaan.
 
-Source code ini dibuat menggunakan bahasa pemrograman PHP dan sudah dilengkapi dengan *unit test* menggunakan [phpunit](https://phpunit.de).
+Source code ini dibuat menggunakan bahasa pemrograman PHP dan sudah dilengkapi dengan _unit test_ menggunakan [phpunit](https://phpunit.de).
 
 ## Prasyarat
 
-- PHP ^8.0
-- Composer ^2.0
+-   PHP ^8.0
+-   Composer ^2.0
 
 ## Instalasi
 
@@ -28,7 +28,7 @@ Packagist: https://packagist.org/packages/ianriizky/coding-interview
 
 ## Testing
 
-Jalankan perintah di bawah ini untuk menjalankan *test script* melalui [phpunit](https://phpunit.de/).
+Jalankan perintah di bawah ini untuk menjalankan _test script_ melalui [phpunit](https://phpunit.de/).
 
 ```bash
 ./vendor/bin/phpunit
@@ -38,21 +38,21 @@ composer test
 
 ## Daftar Studi Kasus yang Tersedia
 
-- [x] [Fizz Buzz](src/FizzBuzz/README.md)
-- [x] [Palindrome](src/Palindrome/README.md)
-- [x] [Data Set](src/DataSet/README.md)
-- [x] [Factorial](src/Factorial/README.md)
+-   [x] [Fizz Buzz](src/FizzBuzz/README.md)
+-   [x] [Palindrome](src/Palindrome/README.md)
+-   [x] [Data Set](src/DataSet/README.md)
+-   [x] [Factorial](src/Factorial/README.md)
 
-Anda bisa membantu kami untuk menambah daftar studi kasus di atas dengan ikut berkontribusi pada *repository* ini. Lihat [`contributing.md`](CONTRIBUTING.md) untuk informasi selanjutnya.
+Anda bisa membantu kami untuk menambah daftar studi kasus di atas dengan ikut berkontribusi pada _repository_ ini. Lihat [`contributing.md`](CONTRIBUTING.md) untuk informasi selanjutnya.
 
-## *Changelog*
+## _Changelog_
 
-Lihat [`changelog.md`](CHANGELOG.md) untuk informasi lebih lanjut mengenai perubahan yang terjadi pada *repository* ini.
+Lihat [`changelog.md`](CHANGELOG.md) untuk informasi lebih lanjut mengenai perubahan yang terjadi pada _repository_ ini.
 
 ## Licensi
 
-*Repository* ini menggunakan lisensi MIT License (MIT). Lihat [`license.md`](LICENSE.md) untuk informasi selanjutnya.
+_Repository_ ini menggunakan lisensi MIT License (MIT). Lihat [`license.md`](LICENSE.md) untuk informasi selanjutnya.
 
 ## Kreator
 
-- [@ianriizky](https://github.com/ianriizky)
+-   [@ianriizky](https://github.com/ianriizky)

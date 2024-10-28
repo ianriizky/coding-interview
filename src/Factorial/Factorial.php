@@ -6,15 +6,12 @@ class Factorial
 {
     /**
      * Temporary value for the recursive value.
-     *
-     * @var int
      */
     protected int $result = 1;
 
     /**
      * Create a new instance class.
      *
-     * @param  int  $initialN
      * @return void
      */
     public function __construct(protected int $initialN)
@@ -24,8 +21,6 @@ class Factorial
 
     /**
      * Return result of the factorial using loop way.
-     *
-     * @return int
      */
     public function resultWithLoop(): int
     {
@@ -44,8 +39,6 @@ class Factorial
 
     /**
      * Return result of the factorial using recursive way.
-     *
-     * @return int
      */
     public function resultWithRecursive(): int
     {
@@ -60,8 +53,6 @@ class Factorial
 
     /**
      * Return result of the factorial using tail recursive way.
-     *
-     * @return int
      */
     public function resultWithTailRecursive(): int
     {
