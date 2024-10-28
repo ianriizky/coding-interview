@@ -1,6 +1,7 @@
 {
     "name": "ianriizky/coding-interview",
     "description": "Kumpulan source code dari pertanyaan atau studi kasus yang sering muncul saat mengikuti proses coding interview",
+    "version": "1.4.0",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -15,7 +16,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "symfony/var-dumper": "^5.2"
+        "symfony/var-dumper": "^5.2",
+        "laravel/pint": "^1.5"
     },
     "autoload": {
         "psr-4": {
@@ -28,6 +30,8 @@
         }
     },
     "scripts": {
-        "test": "./vendor/bin/phpunit"
+        "test": "./vendor/bin/phpunit",
+        "lint": "pint --test",
+        "format": "pint"
     }
 }

@@ -8,22 +8,17 @@ class DataSet
 {
     /**
      * Current size of the collection.
-     *
-     * @var int
      */
     protected int $size = 0;
 
     /**
      * Collection of the data set.
-     *
-     * @var \SplFixedArray
      */
     protected SplFixedArray $collection;
 
     /**
      * Create a new instance class.
      *
-     * @param  int  $initialSize
      * @return void
      */
     public function __construct(int $initialSize = 10)
@@ -35,7 +30,6 @@ class DataSet
      * Add a value to the collection.
      *
      * @param  mixed  $value
-     * @return bool
      */
     public function add($value): bool
     {
@@ -55,7 +49,6 @@ class DataSet
      * Determine whether the given value is exists on the collection or not.
      *
      * @param  mixed  $value
-     * @return bool
      */
     public function contains($value): bool
     {
@@ -70,8 +63,6 @@ class DataSet
 
     /**
      * Return size of collection.
-     *
-     * @return int
      */
     public function size(): int
     {
@@ -80,8 +71,6 @@ class DataSet
 
     /**
      * Return collection of the data set.
-     *
-     * @return \SplFixedArray
      */
     public function collection(): SplFixedArray
     {
@@ -92,11 +81,10 @@ class DataSet
      * Remove a value from the collection.
      *
      * @param  mixed  $value
-     * @return bool
      */
     public function remove($value): bool
     {
-        if (!$this->contains($value)) {
+        if (! $this->contains($value)) {
             return false;
         }
 
@@ -115,7 +103,6 @@ class DataSet
      * Return index of given value.
      *
      * @param  mixed  $value
-     * @return int
      */
     protected function indexOf($value): int
     {
@@ -130,8 +117,6 @@ class DataSet
 
     /**
      * Ensure that the data set size is enough to contain the collection.
-     *
-     * @return void
      */
     protected function ensureSize(): void
     {
